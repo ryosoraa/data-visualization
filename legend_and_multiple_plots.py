@@ -1,3 +1,4 @@
+# ===============================================================
 # plot charts
 
 import matplotlib.pyplot as plt
@@ -18,3 +19,18 @@ plt.legend(loc='lower right')
 # loc in legends is used to set the location of the list of line names
 
 plt.show()
+
+# ==================================================================
+
+# PIE CHARTS
+
+coding = ['C++', 'C#', 'Python', 'Java', 'Golang', 'kotlin']
+score = [45, 69, 90, 60, 100, 120]
+
+plt.pie(score, labels=None)
+plt.legend(coding)
+plt.show()
+
+# The purpose of the program above is to remove the original label from the data that
+#  is obtained and replace it with a custom label from outside or a list, and the index
+#  between the list and the data you want to name must be the same
